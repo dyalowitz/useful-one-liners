@@ -1,0 +1,1 @@
+for pid in /proc/[0-9]*; do echo "$(cat $pid/cmdline 2>/dev/null | tr '\0' ' ')"; done
